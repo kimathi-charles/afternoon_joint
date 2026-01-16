@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <div id="display"></div>
+        <button id="incrBtn">add</button>
+        <button id="decrBtn">ded</button>
+
+    </div>
+
+    <script>
+        const display = document.querySelector("#display")
+        const add = document.querySelector("#incrBtn")
+        const  deduct = document.querySelector("#decrBtn")
+
+
+
+        let count = 0
+        add.addEventListener("click", () =>{
+            count = count + 1
+            console.log(count)
+
+            const button = document.createElement("button")
+            button.textContent = count
+            display.appendChild(button) 
+        })
+
+        deduct.addEventListener('click', ()=>{
+            count = count - 1
+        
+
+
+            
+
+        })
+    </script>
+    
+</body>
+</html>
